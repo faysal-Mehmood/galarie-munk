@@ -41,11 +41,22 @@ module.exports = {
         50: '#FEF2F2',
       },
       white: '#FFFFFF',
+      greenRGB: 'rgba(22, 163, 74, 0.2)',
+      blackRGB: 'rgba(0, 0, 0, 0.6)',
     },
     boxShadow: {
       '3xl': '0px 0px 4px 1px rgba(255, 255, 255, 0.4)',
       shadow1: '0px, 0px rgba(22, 163, 74, 0.4)',
     },
+
+    backgroundImage: {
+      gradient1: 'linear-gradient(90deg, #16A34A 0%, rgba(22, 163, 74, 0) 100%)',
+      gradient2: ' linear-gradient(90deg, #16A34A 0%, #262626 142.89%)',
+      gradient3:
+        ' linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),linear-gradient(0deg, rgba(22, 163, 74, 0.2), rgba(22, 163, 74, 0.2))',
+      gradient4: 'linear-gradient(90deg, #16A34A 0%, #FFFFFF 69.27%)',
+    },
+
     extend: {},
   },
   plugins: [],
