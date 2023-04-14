@@ -19,9 +19,7 @@ const Index = () => {
         {/* pages name*/}
         <h1 className="font-normal text-[60px] leading-[60px] text-gray-800 m-0">PROFILER</h1>
         <div className="w-full h-[1px] bg-gradient1 my-2" />
-        <h2 className="font-normal text-[48px] leading-[48px] text-gray-800 m-0">
-          1.Preferences Questionaire
-        </h2>
+        <h2 className="font-normal text-[48px] leading-[48px] text-gray-800 m-0">1.Preferences Questionaire</h2>
       </div>
       {/* progress bar*/}
       <div className="w-full h-auto py-[12px] min-h-[69px] px-4 bg-gray-200 flex items-center justify-center my-10">
@@ -47,12 +45,8 @@ const Index = () => {
       {/* pictures */}
 
       <div className="px-[150px] text-center">
-        <h2 className="font-normal text-[40px] leading-[40px] text-gray-800 mb-2 ">
-          Click on the pictures that you like the best
-        </h2>
-        <p className="font-normal text-sm text-gray-800 mb-10">
-          We’ll use them to suggest items chosen for you
-        </p>
+        <h2 className="font-normal text-[40px] leading-[40px] text-gray-800 mb-2 ">Click on the pictures that you like the best</h2>
+        <p className="font-normal text-sm text-gray-800 mb-10">We’ll use them to suggest items chosen for you</p>
         {/* pictures cards */}
         <div className="flex items-center gap-x-5 gap-y-4 flex-wrap">
           {/* cards */}
