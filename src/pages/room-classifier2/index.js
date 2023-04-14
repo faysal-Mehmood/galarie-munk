@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowRight from '../../assets/img/arrow-right.svg';
 import CloudArrowUp from '../../assets/img/cloud-arrow-up.svg';
+import card from '../../assets/img/card.png';
 
 const Index = () => {
   return (
@@ -58,28 +59,52 @@ const Index = () => {
 
       <div className="px-[20px] md:px-[clamp(10px,11vw,150px)] text-center">
         <h2 className="font-normal text-[30px] leading-[36px] md:text-[48px] md:leading-[48px] text-gray-800 mb-1 md:mb-2">
-          Upload room
+          Classification
         </h2>
-        <p className="font-normal text-sm text-gray-800 mb-10 w-full md:w-[560px] mx-auto">
-          Explanation text. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Nam convallis ut dui nec porta.
-        </p>
 
         {/*  */}
-        <div className="w-full sm:w-[366px] h-[366px] mx-auto flex items-center justify-center border-[1px] border-solid border-gray-600 bg-[#171717] ">
-          <div className="flex flex-col items-center gap-2 cursor-pointer">
-            <img
-              src={CloudArrowUp}
-              alt="CloudArrowUp"
-              className="w-auto h-auto "
-            />
-            <p className="font-semibold text-base text-white">Select image</p>
-          </div>
+        <div className="w-full sm:w-[369px] h-[371px] mx-auto flex items-center justify-center border-[1px] border-solid border-gray-600 bg-[#171717] mb-[38px]">
+          <img
+            src={card}
+            alt="CloudArrowUp"
+            className="w-full h-full object-cover"
+          />
         </div>
-        {/*  */}
 
-        <button className="w-full sm:w-[365px] h-auto mx-auto mt-20 md:mt-10 mb-[76px] px-[18px] py-[11px] flex items-center justify-center font-semibold text-base text-gray-500 bg-gray-700 ">
-          Classify
+        <div className="w-full mb-4  sm:w-[366px] mx-auto flex items-center justify-between broder-[1px] border-solid border-gray-800 px-[19px] py-3">
+          <label for="inline-radio" className="flex items-center gap-4">
+            <span className="w-8 h-8 bg-red-500" />
+            <p className="font-medium text-base m-0 text-gray-600">Red 25%</p>
+          </label>
+
+          <input
+            id="inline-radio"
+            type="radio"
+            value=""
+            name="inline-radio-group"
+            class="w-5 h-5  bg-gray-100 border-gray-300 focus:ring-transparent dark:focus:ring-transparent dark:ring-offset-none focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          ></input>
+        </div>
+        <div className="w-full  sm:w-[366px] mx-auto flex items-center justify-between broder-[1px] border-solid border-gray-800 px-[19px] py-3">
+          <label for="inline-radio2" className="flex items-center gap-4">
+            <span className="w-8 h-8 bg-[#7B61FF]" />
+            <p className="font-medium text-base m-0 text-gray-600">
+              Purple 10%
+            </p>
+          </label>
+
+          <input
+            id="inline-radio2"
+            type="radio"
+            value=""
+            name="inline-radio-group"
+            class="w-5 h-5  bg-gray-100 border-gray-300 focus:ring-transparent dark:focus:ring-transparent dark:ring-offset-none focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          ></input>
+        </div>
+
+        {/*  */}
+        <button className="w-full  sm:w-[365px] h-auto mx-auto mt-10 mb-[76px] px-[18px] py-[11px] flex items-center justify-center font-semibold text-base text-white bg-green-600 ">
+          Accept Selecteds
         </button>
       </div>
     </div>
